@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    @apply bg-secondary/20 backdrop-blur-md border border-white/10 shadow-lg;
+    animation: border-glow 4s infinite;
+  }
+
+  .glass-nav-scrolled {
+    @apply bg-secondary/40 backdrop-blur-lg border border-accent/20 shadow-lg;
+  }
+  
+  .nav-link {
+    @apply px-4 py-2 rounded-lg hover:bg-accent/20 transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold mb-8;
+  }
+  
+  .project-card {
+    @apply bg-secondary/50 rounded-xl p-6 hover:scale-105 transition-all duration-300;
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+}
