@@ -243,7 +243,7 @@ const Home = () => {
             whileTap={{ scale: 0.98 }}
           >
             <img
-              src={deskSetup}
+              src='https://wallpapercave.com/wp/wp11983781.gif'
               alt="Saurav coding at desk with RGB setup"
               className="w-full h-full object-cover scale-110 hover:scale-125 transition-all duration-700 ease-out"
               style={{ objectPosition: "center center" }}
