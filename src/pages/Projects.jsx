@@ -8,15 +8,15 @@ const projects = [
     image: "/projects/skillsync.png",
     tags: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "TailwindCSS"],
     liveUrl: "https://skillsync-demo.vercel.app",
-    githubUrl: "https://github.com/yourusername/skillsync"
+    githubUrl: "https://github.com/gauranga18/skillsync"
   },
   {
     title: "Portfolio",
     description: "A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations, dynamic project showcases, and an interactive user interface with dark mode support.",
     image: "/projects/portfolio.png",
     tags: ["React", "Framer Motion", "TailwindCSS", "Vite"],
-    liveUrl: "https://your-portfolio.vercel.app",
-    githubUrl: "https://github.com/yourusername/portfolio"
+    liveUrl: "https://saurav-portfolio-woad.vercel.app/",
+    githubUrl: "https://github.com/gauranga18/portfolio"
   },
   {
     title: "Community Health Dashboard",
