@@ -28,7 +28,6 @@ const skills = [
     technologies: [
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-      { name: "Netlify", icon: "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" }
     ]
   },
   {
