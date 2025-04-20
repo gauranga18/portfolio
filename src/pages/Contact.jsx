@@ -3,11 +3,7 @@ import { useState } from 'react';
 
 const Contact = () => {
   const [copied, setCopied] = useState('');
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [result, setResult] = useState('');
 
   const contactInfo = [
     {
@@ -46,17 +42,31 @@ const Contact = () => {
     setTimeout(() => setCopied(''), 2000);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-  };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const formData = new FormData(event.target);
+    formData.append("access_key", "199ae0e6-b0d4-4501-84ed-049d624d1103");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        setResult(`Error: ${data.message}`);
+      }
+    } catch (error) {
+      setResult("An error occurred. Please try again.");
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -116,6 +126,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <motion.button
+                    type="button"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => handleCopy(info.value)}
@@ -136,7 +147,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="bg-secondary/30 backdrop-blur-sm rounded-xl p-8 border border-white/10 h-full">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={onSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
@@ -145,8 +156,6 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 bg-secondary/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
                   required
                 />
@@ -160,8 +169,6 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 bg-secondary/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
                   required
                 />
@@ -174,13 +181,13 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   rows="5"
                   className="w-full px-4 py-2 bg-secondary/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
                   required
                 ></textarea>
               </div>
+
+              {result && <p className="text-center text-sm">{result}</p>}
 
               <motion.button
                 whileHover={{ scale: 1.02 }}
@@ -198,4 +205,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
