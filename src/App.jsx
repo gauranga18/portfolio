@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -13,10 +14,10 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-primary text-white">
+      <div className="flex flex-col min-h-screen bg-primary text-white">
         <CustomCursor />
         <Navbar />
-        <main className="container mx-auto px-4 py-8">
+        <main className="container mx-auto px-4 py-8 flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -27,6 +28,7 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

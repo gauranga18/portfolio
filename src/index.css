@@ -29,6 +29,10 @@
   .project-card {
     @apply bg-secondary/50 rounded-xl p-6 hover:scale-105 transition-all duration-300;
   }
+  
+  .site-footer {
+    @apply w-full mt-auto border-t border-white/10;
+  }
 }
 
 @keyframes border-glow {
