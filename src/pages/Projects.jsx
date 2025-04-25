@@ -19,12 +19,12 @@ const projects = [
     githubUrl: "https://github.com/gauranga18/portfolio"
   },
   {
-    title: "Community Health Dashboard",
-    description: "A comprehensive healthcare analytics platform that visualizes community health metrics, tracks wellness trends, and provides insights for healthcare professionals and community leaders.",
+    title: "Travel Search Engine",
+    description: "A comprehensive travel platform that visualizes available flights metrics, tracks travel spots, and provides facility to book and use flight services.",
     image: "/projects/health-dashboard.png",
     tags: ["React", "D3.js", "Node.js", "Express", "PostgreSQL", "Material-UI"],
     liveUrl: "https://health-dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/yourusername/health-dashboard"
+    githubUrl: "https://github.com/gauranga18/Skyscanner"
   },
   {
     title: "AI Based Companion",
@@ -32,7 +32,7 @@ const projects = [
     image: "/projects/ai-companion.png",
     tags: ["Python", "TensorFlow", "OpenAI API", "FastAPI", "React", "WebSocket"],
     liveUrl: "https://ai-companion-demo.vercel.app",
-    githubUrl: "https://github.com/yourusername/ai-companion"
+    githubUrl: "https://github.com/gauranga18/ai-companion"
   }
 ];
 
