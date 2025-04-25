@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Skill Sync",
     description: "A dynamic platform that connects skilled professionals with learning opportunities. Features real-time skill matching, interactive learning paths, and a collaborative community space for knowledge sharing.",
-    image: "/projects/skillsync.png",
+    image: "https://cdn.pixabay.com/photo/2024/06/14/12/15/developer-8829709_1280.jpg",
     tags: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "TailwindCSS"],
     liveUrl: "https://skillsync-demo.vercel.app",
     githubUrl: "https://github.com/gauranga18/skillsync"
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Portfolio",
     description: "A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations, dynamic project showcases, and an interactive user interface with dark mode support.",
-    image: "/projects/portfolio.png",
+    image: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
     tags: ["React", "Framer Motion", "TailwindCSS", "Vite"],
     liveUrl: "https://saurav-portfolio-woad.vercel.app/",
     githubUrl: "https://github.com/gauranga18/portfolio"
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Travel Search Engine",
     description: "A comprehensive travel platform that visualizes available flights metrics, tracks travel spots, and provides facility to book and use flight services.",
-    image: "/projects/health-dashboard.png",
+    image: "https://cdn.pixabay.com/photo/2018/09/25/17/14/airplane-3702676_1280.jpg",
     tags: ["React", "D3.js", "Node.js", "Express", "PostgreSQL", "Material-UI"],
     liveUrl: "https://health-dashboard-demo.vercel.app",
     githubUrl: "https://github.com/gauranga18/Skyscanner"
@@ -29,7 +29,7 @@ const projects = [
   {
     title: "AI Based Companion",
     description: "An intelligent virtual companion powered by advanced AI algorithms. Features natural language processing, personalized interactions, emotion recognition, and adaptive learning capabilities.",
-    image: "/projects/ai-companion.png",
+    image: "https://i.pinimg.com/736x/eb/a1/6c/eba16cfb17039ff0be5d7aab2b9312bf.jpg",
     tags: ["Python", "TensorFlow", "OpenAI API", "FastAPI", "React", "WebSocket"],
     liveUrl: "https://ai-companion-demo.vercel.app",
     githubUrl: "https://github.com/gauranga18/ai-companion"
