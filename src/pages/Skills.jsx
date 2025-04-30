@@ -9,8 +9,15 @@ const skills = [
       { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
       { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-      { name: "Vite", icon: "https://cdn.jsdelivr.net/gh/vitejs/vite/docs/public/logo.svg" }
+      { name: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" }
+    ]
+  },
+  {
+    category: "Programming Languages",
+    technologies: [
+      { name: "C++", icon: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000" },
+      { name: "C", icon: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" }
     ]
   },
   {
@@ -18,9 +25,13 @@ const skills = [
     technologies: [
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-      { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-      { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+    ]
+  },
+  {
+    category: "Database",
+    technologies: [
+      { name: "MongoDb", icon: "https://img.icons8.com/?size=100&id=74402&format=png&color=000000" },
+      { name: "MySQL", icon: "https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" },
     ]
   },
   {
@@ -34,11 +45,10 @@ const skills = [
     category: "Design",
     technologies: [
       { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      { name: "Adobe Lightroom", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
       { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" }
     ]
   }
-];
+];  
 
 const TechIcon = ({ tech, delay }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
