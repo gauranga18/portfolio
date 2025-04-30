@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import deskSetup from '../assets/WhatsApp Image 2025-04-09 at 17.00.18_74b4f8fb.jpg';
+
 
 // Star component for background
 const Star = ({ style }) => (
