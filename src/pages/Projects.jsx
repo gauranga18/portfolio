@@ -24,7 +24,7 @@ const projects = [
     image: "https://cdn.pixabay.com/photo/2018/09/25/17/14/airplane-3702676_1280.jpg",
     tags: ["React", "D3.js", "Node.js", "Express", "PostgreSQL", "Material-UI"],
     liveUrl: "https://health-dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/gauranga18/Skyscanner"
+    githubUrl: "https://github.com/gauranga18/Backpack"
   },
   {
     title: "AI Based Companion",
