@@ -24,14 +24,31 @@ const About = () => {
           <Canvas>
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 100, 200]} scale={2}>
-              <MeshDistortMaterial
+            <mesh>
+              <boxGeometry args={[1.5, 1.5, 1.5]} />
+              <meshStandardMaterial
                 color="#3b82f6"
-                attach="material"
-                distort={0.5}
-                speed={2}
+                wireframe={true}
+                metalness={0.8}
+                roughness={0.2}
               />
-            </Sphere>
+            </mesh>
+            <points>
+              <bufferGeometry>
+                <bufferAttribute
+                  attach="attributes-position"
+                  count={1000}
+                  array={new Float32Array(3000).map(() => (Math.random() - 0.5) * 5)}
+                  itemSize={3}
+                />
+              </bufferGeometry>
+              <pointsMaterial
+                size={0.02}
+                color="#3b82f6"
+                transparent
+                opacity={0.6}
+              />
+            </points>
             <OrbitControls enableZoom={false} />
           </Canvas>
         </motion.div>

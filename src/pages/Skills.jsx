@@ -16,15 +16,15 @@ const skills = [
     category: "Programming Languages",
     technologies: [
       { name: "C++", icon: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000" },
-      { name: "C", icon: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000" },
-      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" }
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+       { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" }
+
     ]
   },
   {
     category: "Backend",
     technologies: [
-      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+      { name: "SpringBoot", icon: "https://img.icons8.com/?size=100&id=90519&format=png&color=000000" }
     ]
   },
   {
@@ -44,8 +44,7 @@ const skills = [
   {
     category: "Design",
     technologies: [
-      { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" }
+      { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
     ]
   }
 ];  
