@@ -26,14 +26,6 @@ const projects = [
     liveUrl: "https://health-dashboard-demo.vercel.app",
     githubUrl: "https://github.com/gauranga18/Backpack"
   },
-  {
-    title: "AI Based Companion",
-    description: "An intelligent virtual companion powered by advanced AI algorithms. Features natural language processing, personalized interactions, emotion recognition, and adaptive learning capabilities.",
-    image: "https://i.pinimg.com/736x/eb/a1/6c/eba16cfb17039ff0be5d7aab2b9312bf.jpg",
-    tags: ["Python", "TensorFlow", "OpenAI API", "FastAPI", "React", "WebSocket"],
-    liveUrl: "https://ai-companion-demo.vercel.app",
-    githubUrl: "https://github.com/gauranga18/ai-companion"
-  }
 ];
 
 const ProjectCard = ({ project, index }) => {
