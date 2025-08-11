@@ -18,14 +18,6 @@ const projects = [
     liveUrl: "https://saurav-portfolio-woad.vercel.app/",
     githubUrl: "https://github.com/gauranga18/portfolio"
   },
-  {
-    title: "Travel Search Engine",
-    description: "A comprehensive travel platform that visualizes available flights metrics, tracks travel spots, and provides facility to book and use flight services.",
-    image: "https://cdn.pixabay.com/photo/2018/09/25/17/14/airplane-3702676_1280.jpg",
-    tags: ["React", "D3.js", "Node.js", "Express", "PostgreSQL", "Material-UI"],
-    liveUrl: "https://health-dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/gauranga18/Backpack"
-  },
 ];
 
 const ProjectCard = ({ project, index }) => {
