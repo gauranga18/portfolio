@@ -18,6 +18,14 @@ const projects = [
     liveUrl: "https://saurav-portfolio-woad.vercel.app/",
     githubUrl: "https://github.com/gauranga18/portfolio"
   },
+  {
+    title: "DevVault",
+    description: "A modern, responsive portfolio website built with React and SpringBoot.",
+    image: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
+    tags: ["React", "Framer Motion", "TailwindCSS", "Vite"],
+    liveUrl: "https://saurav-portfolio-woad.vercel.app/",
+    githubUrl: "https://github.com/gauranga18/portfolio"
+  },
 ];
 
 const ProjectCard = ({ project, index }) => {
