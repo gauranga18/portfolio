@@ -21,10 +21,10 @@ const projects = [
   {
     title: "DevVault",
     description: "A modern, responsive Developer collaboration website built with React and SpringBoot.",
-    image: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
-    tags: ["React", "Framer Motion", "TailwindCSS", "Vite"],
+    image: "https://i0.wp.com/mia-platform.eu/wp-content/uploads/Mia-Platform-Internal-Developer-Portal-2.png?fit=1920%2C991&ssl=1",
+    tags: ["React", "SpringBoot", "JWT", "AES","PostgreSQL"],
     liveUrl: "https://saurav-portfolio-woad.vercel.app/",
-    githubUrl: "https://github.com/gauranga18/portfolio"
+    githubUrl: "https://github.com/gauranga18/DevVault"
   },
 ];
 
