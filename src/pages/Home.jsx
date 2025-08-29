@@ -173,7 +173,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-400 max-w-2xl"
             >
-              A passionate web developer focused on creating interactive and responsive web applications
+              A passionate developer focused on creating innovative applications
             </motion.p>
 
             <motion.div
